@@ -1,4 +1,4 @@
-import { FaLinkedin, FaTwitter, FaGithub, FaInstagram, FaDiscord, FaYoutube } from "react-icons/fa";
+import { FaLinkedin,  FaGithub, FaInstagram, FaDiscord, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 function FollowMe() {
