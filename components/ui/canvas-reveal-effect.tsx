@@ -204,7 +204,7 @@ const ShaderMaterial = ({
     }
     lastFrameTime = timestamp;
 
-    // const material: any = ref.current.material;
+    const material: any = ref.current.material;
     const timeLocation = material.uniforms.u_time;
     timeLocation.value = timestamp;
   });

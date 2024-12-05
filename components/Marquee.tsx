@@ -22,7 +22,7 @@ function Marquee() {
 
   return (
     <>
-    <div className="p-4  sm:py-24 w-full">
+    <CardSpotlight className="p-4  sm:py-24 w-full">
       <h1 className='md:text-5xl sm:mb-12 text-2xl font-bold text-[#DAC5A7] text-center p-2'>Tech Stack</h1>
     <div className="flex flex-wrap sm:gap-14 gap-1 justify-center items-center  ">
         {images.map((image, index) => (
@@ -36,7 +36,7 @@ function Marquee() {
           />
         ))}
       </div>
-    </div>
+    </CardSpotlight>
     <div className='p-4 sm:py-12'>
      <h1 className='text-center sm:mb-14 md:text-5xl text-2xl text-[#DAC5A7] font-bold p-4'>My Creations</h1>
     <ExpandableCardDemo/>
