@@ -32,12 +32,12 @@ export function Certificates() {
   return (
     <div>
         <h2 className="text-center text-2xl  my-4 sm:my-8 sm:text-5xl font-bold  text-[#DAC5A7]">Certifications & Achievements</h2>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-14  sm:gap-8 mx-auto  px-8 py-2 sm:p-4">
+        <div className=" grid grid-cols-1 md:grid-cols-4 gap-14  sm:gap-8 mx-auto  px-8 py-2 sm:p-4">
             
       {certificateData.map((certificate, index) => (
         <BackgroundGradient
           key={index}
-          className="rounded-[22px] max-w-sm p-2 bg-neutral-50 dark:bg-zinc-900"
+          className="rounded-[22px]  max-w-sm p-2 bg-neutral-50 dark:bg-zinc-900"
         >
           {/* Certificate Image */}
           <Image

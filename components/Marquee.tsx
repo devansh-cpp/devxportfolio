@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { CardSpotlight } from './ui/card-spotlight';
-import { ExpandableCardDemo } from './ui/grid-card';
 
 function Marquee() {
   const images = [
@@ -37,10 +36,7 @@ function Marquee() {
         ))}
       </div>
     </CardSpotlight>
-    <div className='p-4 sm:py-12'>
-     <h1 className='text-center sm:mb-14 md:text-5xl text-2xl text-[#DAC5A7] font-bold p-4'>My Creations</h1>
-    <ExpandableCardDemo/>
-    </div>
+    
     </>
   );
 }

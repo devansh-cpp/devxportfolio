@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 function FollowMe() {
   return (
     <section>
-      <div className="mx-auto max-w-sm mt-20 border-4 border-[#DAC5AC] shadow-[5px_5px_0_0_rgba(0,0,0,1)] shadow-indigo-600/100 p-4 md:p-10 flex flex-col items-center justify-center text-center">
+      <div id="contact" className=" mx-auto max-w-sm mt-20 border-4 border-[#DAC5AC] shadow-[5px_5px_0_0_rgba(0,0,0,1)] shadow-indigo-600/100 p-4 md:p-10 flex flex-col items-center justify-center text-center">
         <p className="text-[#DAC5AC] text-xl md:text-2xl font-bold border-b-4 border-[#DAC5AC]">
           Follow Me On
         </p>

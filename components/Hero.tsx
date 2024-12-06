@@ -6,7 +6,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 function HomePage() {
   return (
     <>
-      <div className="container sm:mx-auto px-32 relative flex justify-center text-[#DAC5A7] sm:h-[720px] overflow-hidden">
+      <div className="container sm:mx-auto px-32 sm:relative flex justify-center text-[#DAC5A7] sm:h-[720px] overflow-hidden">
         
         <div className="sm:flex hidden">
           
@@ -16,8 +16,11 @@ function HomePage() {
             <h1 className="text-8xl text-white font-bold mb-4">Hello<span className="text-[#DAC5A7] text-[100px]">.</span></h1>
             <h1 className="text-4xl font-bold mb-4">- I&#39;am Devansh Mishra</h1>
             <h1 className="text-2xl text-white font-semibold mb-4">A Passionate Programmer</h1>
-            <button className="absolute text-black border-2 border-[#DAC5A7] hover:bg-transparent duration-300 hover:text-[#DAC5A7] z-50 font-semibold px-12 py-4 mt-4 bg-[#DAC5A7] rounded-lg flex justify-center items-center gap-2">
-            <FaDownload /> <a href="https://docs.google.com/document/d/16QJwqR-SU755yrhaBgZqgg9hnLxqQZrnjNr8zYUQ5KE/edit?usp=sharing">Download CV</a> </button>
+            <a href="./Resume.pdf" download>
+            
+            <button className="absolute z-30 text-black border-2 border-[#DAC5A7] hover:bg-transparent duration-300 hover:text-[#DAC5A7]  font-semibold px-12 py-4 mt-4 bg-[#DAC5A7] rounded-lg flex justify-center items-center gap-2">
+            <FaDownload />Download CV </button>
+            </a>
           </div>
         </div>
 
@@ -75,9 +78,10 @@ function HomePage() {
           <div className="flex py-4 justify-center items-center gap-4">
 
           <h1 className="mt-4 flex items-center gap-4 text-sm font-semibold">Let&#39;s Talk <FaArrowRightLong className="hover:animate-bounceHorizontal" /></h1>
-
+          <a href="./Resume.pdf" download>
             <button className="text-black border-2 border-[#DAC5A7] hover:bg-transparent duration-300 hover:text-[#DAC5A7] z-50 font-semibold px-2 py-2 mt-4 bg-[#DAC5A7] rounded-lg flex justify-center items-center gap-2">
             <FaDownload /> Download CV</button>
+            </a>
           </div>
           </div>
         </div>
