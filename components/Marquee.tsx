@@ -1,41 +1,37 @@
-import React from 'react';
-import Image from 'next/image';
-import { CardSpotlight } from './ui/card-spotlight';
+import React from 'react';;
+import LogoWall from '@/app/blocks/Components/LogoWall/LogoWall';
 
 function Marquee() {
-  const images = [
-    { src: '/java.png', alt: 'Java Logo' },
-    { src: '/python.png', alt: 'Python Logo' },
-    { src: '/html.png', alt: 'HTML Logo' },
-    { src: '/css.png', alt: 'HTML Logo' },
-    { src: '/js.png', alt: 'JavaScript Logo' },
-    { src: '/node.png', alt: 'CSS Logo' },
-    { src: '/mongo.png', alt: 'CSS Logo' },
-    { src: '/mysql.png', alt: 'CSS Logo' },
-    { src: '/cpp.png', alt: 'CSS Logo' },
-    { src: '/react.png', alt: 'CSS Logo' },
-    { src: '/ts.png', alt: 'CSS Logo' },
-    { src: '/canva.png', alt: 'CSS Logo' },
+  const logoImgs = [
+    { imgUrl: '/java.png', altText: 'Java Logo' },
+    { imgUrl: '/python.png', altText: 'Python Logo' },
+    { imgUrl: '/html.png', altText: 'HTML Logo' },
+    { imgUrl: '/css.png', altText: 'HTML Logo' },
+    { imgUrl: '/js.png', altText: 'JavaScript Logo' },
+    { imgUrl: '/node.png', altText: 'CSS Logo' },
+    { imgUrl: '/mongo.png', altText: 'CSS Logo' },
+    { imgUrl: '/mysql.png', altText: 'CSS Logo' },
+    { imgUrl: '/cpp.png', altText: 'CSS Logo' },
+    { imgUrl: '/react.png', altText: 'CSS Logo' },
+    { imgUrl: '/ts.png', altText: 'CSS Logo' },
+    { imgUrl: '/canva.png', altText: 'CSS Logo' },
 
   ];
 
   return (
     <>
-    <CardSpotlight className="p-4  sm:py-24 w-full">
-      <h1 className='md:text-5xl sm:mb-12 text-2xl font-bold text-[#DAC5A7] text-center p-2'>Tech Stack</h1>
-    <div className="flex flex-wrap sm:gap-14 gap-1 justify-center items-center  ">
-        {images.map((image, index) => (
-          <Image
-            key={index}
-            src={image.src}
-            alt={image.alt}
-            width={45}
-            height={25}
-            className="relative hover:scale-125 duration-200"
-          />
-        ))}
-      </div>
-    </CardSpotlight>
+    <div style={{height: '', width: '100%', position: 'relative'}}
+    className=''>
+  <LogoWall
+    items={logoImgs}
+    direction='horizontal'
+    pauseOnHover={true}
+    size='clamp(8rem, 1rem + 20vmin, 25rem)'
+    duration='60s'
+    bgColor='#060606'
+    bgAccentColor='#111111'
+  />  
+</div>
     
     </>
   );
